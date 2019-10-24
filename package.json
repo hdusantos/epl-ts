@@ -1,0 +1,21 @@
+{
+  "name": "epl-ts",
+  "version": "1.0.0",
+  "description": "A modular epl implementation in TypeScript",
+  "main": "index.js",
+  "repository": "https://github.com/hdusantos/epl-ts",
+  "author": "Hudson dos Santos <hudson.alves@live.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "prebuild": "yarn run lint",
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "prestart": "yarn run build",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.4"
+  }
+}
